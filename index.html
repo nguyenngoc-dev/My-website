@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="./assets/img/icon.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/font/themify-font/themify-icons/themify-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/font/fontawesome/fontawesome-free-5.15.3-web/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Nguyen Ngoc</title>
+  </head>
+  <body>
+    <div class="main">
+      <!-- scroll to top -->
+      <a id="btn" href="#">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="24px"
+          height="24px"
+          viewBox="0 0 24 24"
+          version="1.1"
+          class="scroll-top-icon"
+        >
+          <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+          <title>Stockholm-icons / Navigation / Up-2</title>
+          <desc>Created with Sketch.</desc>
+          <defs></defs>
+          <g
+            id="Stockholm-icons-/-Navigation-/-Up-2"
+            stroke="none"
+            stroke-width="1"
+            fill="none"
+            fill-rule="evenodd"
+          >
+            <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+            <rect
+              id="Rectangle"
+              fill="white"
+              opacity="0.3"
+              x="11"
+              y="10"
+              width="2"
+              height="10"
+              rx="1"
+            ></rect>
+            <path
+              d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825 4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 C19.0828436,11.1360383 19.1103465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z"
+              id="Path-94"
+              fill="white"
+              fill-rule="nonzero"
+            ></path>
+          </g>
+        </svg>
+      </a>
+      <header
+        class="header"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-offset="500"
+      >
+        <div class="container full-height">
+          <div class="row full-height">
+            <div class="col-lg-4">
+              <a href="#home" class="header-logo-link">
+                <img
+                  src="./assets/img/icon.png"
+                  alt="icon"
+                  class="header-logo-icon"
+                />
+              </a>
+            </div>
+            <div class="col-lg-8">
+              <div class="header-nav">
+                <ul class="header-nav-list">
+                  <li class="header-nav-item">
+                    <a href="" class="header-nav-link active"> Home </a>
+                  </li>
+                  <li class="header-nav-item">
+                    <a href="" class="header-nav-link"> About </a>
+                  </li>
+                  <li class="header-nav-item">
+                    <a href="" class="header-nav-link"> Skills </a>
+                  </li>
+                  <li class="header-nav-item">
+                    <a href="" class="header-nav-link"> Experiences </a>
+                  </li>
+                  <li class="header-nav-item">
+                    <a href="" class="header-nav-link"> Contact </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content" style="height: 5000px"></div>
+      <footer class="footer"></footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(window).scrollTop() > 200) {
+            $("#btn").fadeIn();
+          } else {
+            $("#btn").fadeOut();
+          }
+        });
+        $("#btn").click(function () {
+          $("html,body").animate({ scrollTop: 0 }, "fast");
+        });
+      });
+    </script>
+  </body>
+</html>

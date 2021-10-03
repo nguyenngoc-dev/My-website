@@ -1,0 +1,121 @@
+* {
+  box-sizing: inherit;
+}
+
+.main {
+  overflow: hidden;
+  background-color: #100e17;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "roboto", sans-serif;
+  line-height: 1.6rem;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: white;
+}
+
+#btn {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+  background-color: #0dab93;
+  border-radius: 5px;
+  opacity: 0.4;
+  z-index: 1000;
+  display: none;
+  transition: all 0.2s linear;
+}
+
+#btn:hover {
+  opacity: 1;
+}
+
+#btn .scroll-top-icon {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.full-height {
+  height: 100%;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+/* css for scroll-bar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  background-color: red;
+  height: 80px;
+}
+.header-logo-link {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.header-logo-link .header-logo-icon {
+  width: 80px;
+  height: 40px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.header-nav-list {
+  display: flex;
+}
+.header-nav-item {
+  margin: 0 20px;
+}
+.header-nav-link {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 700;
+  border-bottom: 1px solid transparent;
+  padding: 10px 0;
+}
+.header-nav-link.active {
+  border-color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

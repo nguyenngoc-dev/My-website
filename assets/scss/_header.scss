@@ -1,0 +1,38 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  background-color: red;
+  height: 80px;
+  &-logo-link {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+    .header-logo-icon {
+      width: 80px;
+      height: 40px;
+    }
+  }
+  &-nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    &-list {
+      display: flex;
+    }
+    &-item {
+      margin: 0 20px;
+    }
+    &-link {
+      @include text(1.8rem, white, 700);
+      border-bottom: 1px solid transparent;
+      padding: 10px 0;
+      &.active {
+        border-color: white;
+      }
+    }
+  }
+}
