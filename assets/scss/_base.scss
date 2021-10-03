@@ -22,7 +22,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  color: white;
+  color: #e4e3e5;
 }
 
 #btn {
@@ -63,6 +63,17 @@ a {
 a:hover {
   text-decoration: none !important;
 }
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  transition: all linear 0.3s;
+}
 /* css for scroll-bar */
 ::-webkit-scrollbar {
   width: 5px;
@@ -76,4 +87,12 @@ a:hover {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #ccc;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

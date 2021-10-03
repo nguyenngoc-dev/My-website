@@ -74,48 +74,113 @@
           </g>
         </svg>
       </a>
-      <header
-        class="header"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-offset="500"
-      >
+
+      <header class="header" data-aos="fade-up">
         <div class="container full-height">
           <div class="row full-height">
-            <div class="col-lg-4">
-              <a href="#home" class="header-logo-link">
+            <div class="col-lg-4 col-sm-4 col-4 col-md-4">
+              <a href="#" class="header-logo-link">
                 <img
-                  src="./assets/img/icon.png"
+                  src="./assets/img/logo.png"
                   alt="icon"
                   class="header-logo-icon"
                 />
               </a>
             </div>
-            <div class="col-lg-8">
+            <div class="col-sm-8 col-8 col-lg-8 col-md-8">
+              <div class="header-nav-bars">
+                <i class="fas fa-bars header-nav-bars-icon"></i>
+              </div>
+
+              <div class="overlay"></div>
               <div class="header-nav">
                 <ul class="header-nav-list">
                   <li class="header-nav-item">
-                    <a href="" class="header-nav-link active"> Home </a>
+                    <a href="#home" class="header-nav-link active"> Home </a>
                   </li>
                   <li class="header-nav-item">
-                    <a href="" class="header-nav-link"> About </a>
+                    <a href="#about" class="header-nav-link"> About </a>
                   </li>
                   <li class="header-nav-item">
-                    <a href="" class="header-nav-link"> Skills </a>
+                    <a href="#skills" class="header-nav-link"> Skills </a>
                   </li>
                   <li class="header-nav-item">
-                    <a href="" class="header-nav-link"> Experiences </a>
+                    <a href="#experiences" class="header-nav-link">
+                      Experiences
+                    </a>
                   </li>
                   <li class="header-nav-item">
-                    <a href="" class="header-nav-link"> Contact </a>
+                    <a href="#contact" class="header-nav-link"> Contact </a>
                   </li>
+                  <div class="line"></div>
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </header>
-      <div class="content" style="height: 5000px"></div>
+      <div class="content" style="height: 5000px">
+        <div class="home" id="home">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="home-inf">
+                  <span class="btn"> Hello I'm </span>
+                  <h1 class="home-heading-name">Nguyễn Văn Ngọc</h1>
+                  <h2 class="home-major">Web Developer</h2>
+                  <ul class="home-contact-list">
+                    <li class="home-contact-item">
+                      <a href="mailto:" class="home-contact-link">
+                        <i class="fa fa-envelope"></i>
+                        nguyenngocsn2001@gmail.com
+                      </a>
+                    </li>
+                    <li class="home-contact-item">
+                      <a href="callto:" class="home-contact-link">
+                        <i class="fa fa-phone"></i>
+                        0333158440
+                      </a>
+                    </li>
+                    <li class="home-contact-item">
+                      <a href="" class="home-contact-link">
+                        <i class="fa fa-map-marker"></i>
+                        <address>Ha Noi</address>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="home-social-list">
+                    <li class="home-social-item">
+                      <a href="" class="home-social-link">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li class="home-social-item">
+                      <a href="" class="home-social-link"
+                        ><i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                    <li class="home-social-item">
+                      <a href="" class="home-social-link">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li class="home-social-item">
+                      <a href="" class="home-social-link">
+                        <i class="fa fa-dribbble"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-6">lol</div>
+            </div>
+          </div>
+        </div>
+        <div class="about" id="about"></div>
+        <div class="skills" id="skills"></div>
+        <div class="experiences" id="experience"></div>
+        <div class="contact" id="contact"></div>
+      </div>
       <footer class="footer"></footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -123,7 +188,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        offset: 100,
+        duration: 1000,
+      });
     </script>
     <script>
       $(document).ready(function () {
@@ -139,5 +207,6 @@
         });
       });
     </script>
+    <script src="./assets/js/header.js"></script>
   </body>
 </html>
