@@ -2,7 +2,8 @@ $backgroundColor: #100e17;
 $primaryColor: #0dab93;
 $darkPrimaryColor: #0bceaf;
 $grayColor: #1e1e25;
-@mixin text($size, $color, $weight) {
+$textColor: #e4e3e5;
+@mixin text($size, $color: $textColor, $weight) {
   font-size: $size;
   color: $color;
   font-weight: $weight;

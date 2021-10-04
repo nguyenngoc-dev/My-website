@@ -102,6 +102,9 @@
                     <a href="#about" class="header-nav-link"> About </a>
                   </li>
                   <li class="header-nav-item">
+                    <a href="#service" class="header-nav-link"> Service </a>
+                  </li>
+                  <li class="header-nav-item">
                     <a href="#skills" class="header-nav-link"> Skills </a>
                   </li>
                   <li class="header-nav-item">
@@ -120,66 +123,373 @@
         </div>
       </header>
       <div class="content" style="height: 5000px">
-        <div class="home" id="home">
+        <section class="home" id="home">
           <div class="container">
-            <div class="row">
-              <div class="col-sm-6 col-md-6 col-lg-6">
-                <div class="home-inf">
-                  <span class="btn"> Hello I'm </span>
+            <div class="row home-row">
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="home-inf" data-aos="fade-up" data-aos-delay="300">
+                  <span class="home-btn"> Hello I'm </span>
                   <h1 class="home-heading-name">Nguyễn Văn Ngọc</h1>
                   <h2 class="home-major">Web Developer</h2>
                   <ul class="home-contact-list">
                     <li class="home-contact-item">
+                      <i class="fa fa-envelope home-contact-icon"></i>
                       <a href="mailto:" class="home-contact-link">
-                        <i class="fa fa-envelope"></i>
                         nguyenngocsn2001@gmail.com
                       </a>
                     </li>
                     <li class="home-contact-item">
+                      <i class="fa fa-phone home-contact-icon"></i>
                       <a href="callto:" class="home-contact-link">
-                        <i class="fa fa-phone"></i>
                         0333158440
                       </a>
                     </li>
                     <li class="home-contact-item">
-                      <a href="" class="home-contact-link">
-                        <i class="fa fa-map-marker"></i>
-                        <address>Ha Noi</address>
+                      <i class="fa fa-map-marker home-contact-icon"></i>
+                      <a href="#" class="home-contact-link">
+                        Bắc Từ Liêm, Hà Nội, Việt Nam
                       </a>
                     </li>
                   </ul>
                   <ul class="home-social-list">
                     <li class="home-social-item">
-                      <a href="" class="home-social-link">
+                      <a
+                        href="https://www.facebook.com/nonstop.nguyen.52/"
+                        target="_blank"
+                        class="home-social-link"
+                      >
                         <i class="fab fa-facebook-f"></i>
                       </a>
                     </li>
                     <li class="home-social-item">
-                      <a href="" class="home-social-link"
+                      <a
+                        href="https://www.linkedin.com/in/nguyen-van-ngoc-349947220/"
+                        target="_blank"
+                        class="home-social-link"
                         ><i class="fab fa-linkedin-in"></i>
                       </a>
                     </li>
                     <li class="home-social-item">
-                      <a href="" class="home-social-link">
+                      <a
+                        href="https://github.com/nguyenngoc-dev?tab=overview&from=2021-09-01&to=2021-09-30"
+                        class="home-social-link"
+                        target="_blank"
+                      >
                         <i class="fab fa-github"></i>
-                      </a>
-                    </li>
-                    <li class="home-social-item">
-                      <a href="" class="home-social-link">
-                        <i class="fa fa-dribbble"></i>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-6 col-lg-6">lol</div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div
+                  class="home-avatar"
+                  data-aos="fade-up"
+                  data-aos-delay="350"
+                >
+                  <img
+                    src="./assets/img/logo.png"
+                    alt=""
+                    class="home-avatar-img"
+                  />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="about" id="about"></div>
-        <div class="skills" id="skills"></div>
-        <div class="experiences" id="experience"></div>
-        <div class="contact" id="contact"></div>
+        </section>
+        <section class="about" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="about-img" data-aos="fade-up" data-aos-delay="300">
+                  <img
+                    src="./assets/img/about.png"
+                    alt=""
+                    class="about-img-left"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="about-inf" data-aos="fade-up" data-aos-delay="250">
+                  <h2 class="about-inf-heading">About Me</h2>
+                  <p class="about-inf-pg">
+                    Hello, I’m a Patrick, web-developer based on Paris. I have
+                    rich experience in web site design & building and
+                    customization. Also I am good at
+                  </p>
+                  <ul class="about-inf-list">
+                    <li class="about-inf-item">HTML</li>
+                    <li class="about-inf-item">CSS</li>
+                    <li class="about-inf-item">Bootstrap</li>
+                    <li class="about-inf-item">Javascript</li>
+                    <li class="about-inf-item">Jquery</li>
+                    <li class="about-inf-item">React</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="service" id="service">
+          <div class="container">
+            <div class="row">
+              <div class="service-head col-lg-12">
+                <h1 class="service-heading" data-aos="fade-up">What I do</h1>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div
+                  class="service-item"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <i class="service-item-icon fas fa-code"></i>
+                  <h3 class="service-item-heading">Web Development</h3>
+                  <p class="service-item-pg">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat.
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div
+                  class="service-item"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <i class="service-item-icon fas fa-code"></i>
+                  <h3 class="service-item-heading">Web Development</h3>
+                  <p class="service-item-pg">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat.
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div
+                  class="service-item"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <i class="service-item-icon fas fa-code"></i>
+                  <h3 class="service-item-heading">Web Development</h3>
+                  <p class="service-item-pg">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="skills" id="skills">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="skills-tech">
+                  <h1 class="skills-tech-heading" data-aos="fade-up">
+                    Technical Skills
+                  </h1>
+                  <div class="skills-tech-per">
+                    <div
+                      class="skills-tech-per-item"
+                      data-aos="fade-up"
+                      data-aos-delay="100"
+                    >
+                      <div class="skills-tech-per-des">
+                        <span class="skills-tech-per-des-pg"> Javascript </span>
+                        <span class="skills-tech-per-des-pg"> 70% </span>
+                      </div>
+                      <div class="skills-tech-per-range">
+                        <div
+                          class="skills-tech-per-range-child"
+                          style="width: 70%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div
+                      class="skills-tech-per-item"
+                      data-aos="fade-up"
+                      data-aos-delay="200"
+                    >
+                      <div class="skills-tech-per-des">
+                        <span class="skills-tech-per-des-pg"> HTML, CSS </span>
+                        <span class="skills-tech-per-des-pg"> 80% </span>
+                      </div>
+                      <div class="skills-tech-per-range">
+                        <div
+                          class="skills-tech-per-range-child"
+                          style="width: 80%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div
+                      class="skills-tech-per-item"
+                      data-aos="fade-up"
+                      data-aos-delay="300"
+                    >
+                      <div class="skills-tech-per-des">
+                        <span class="skills-tech-per-des-pg">
+                          Jquery, Bootstrap
+                        </span>
+                        <span class="skills-tech-per-des-pg"> 60% </span>
+                      </div>
+                      <div class="skills-tech-per-range">
+                        <div
+                          class="skills-tech-per-range-child"
+                          style="width: 60%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div
+                      class="skills-tech-per-item"
+                      data-aos="fade-up"
+                      data-aos-delay="400"
+                    >
+                      <div class="skills-tech-per-des">
+                        <span class="skills-tech-per-des-pg"> React </span>
+                        <span class="skills-tech-per-des-pg"> 55% </span>
+                      </div>
+                      <div class="skills-tech-per-range">
+                        <div
+                          class="skills-tech-per-range-child"
+                          style="width: 55%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="skills-pro">
+                  <h1 class="skills-tech-heading" data-aos="fade-up">
+                    Soft Skill
+                  </h1>
+                  <div class="skills-pro-per">
+                    <ul
+                      class="skills-pro-per-list"
+                      data-aos="fade-up"
+                      data-aos-delay="300"
+                    >
+                      <li class="skills-pro-per-item">
+                        <div class="skills-pro-per-item-contain">
+                          <svg viewBox="0 0 100 100" width="100" height="100">
+                            <path
+                              d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95"
+                              stroke="#6c757d"
+                              stroke-width="5"
+                              fill-opacity="0"
+                              fill="#20c997"
+                            ></path>
+                            <path
+                              d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95"
+                              stroke="#20c997"
+                              stroke-width="5"
+                              fill-opacity="0"
+                              style="
+                                stroke-dasharray: 298.493, 298.493;
+                                stroke-dashoffset: 45;
+                              "
+                              fill="#20c997"
+                            ></path>
+                          </svg>
+                          <span class="skills-pro-per-item-num"> 85% </span>
+                        </div>
+                        <div class="skills-pro-per-item-title">
+                          Communication
+                        </div>
+                      </li>
+                      <li class="skills-pro-per-item">
+                        <div class="skills-pro-per-item-contain">
+                          <svg viewBox="0 0 100 100" width="100" height="100">
+                            <path
+                              d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95"
+                              stroke="#6c757d"
+                              stroke-width="5"
+                              fill-opacity="0"
+                              fill="#20c997"
+                            ></path>
+                            <path
+                              d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95"
+                              stroke="#20c997"
+                              stroke-width="5"
+                              fill-opacity="0"
+                              style="
+                                stroke-dasharray: 298.493, 298.493;
+                                stroke-dashoffset: 90;
+                              "
+                              fill="#20c997"
+                            ></path>
+                          </svg>
+                          <span class="skills-pro-per-item-num"> 70% </span>
+                        </div>
+                        <div class="skills-pro-per-item-title">Team Work</div>
+                      </li>
+                      <li class="skills-pro-per-item">
+                        <div class="skills-pro-per-item-contain">
+                          <svg viewBox="0 0 100 100" width="100" height="100">
+                            <path
+                              d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95"
+                              stroke="#6c757d"
+                              stroke-width="5"
+                              fill-opacity="0"
+                              fill="#20c997"
+                            ></path>
+                            <path
+                              d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95"
+                              stroke="#20c997"
+                              stroke-width="5"
+                              fill-opacity="0"
+                              style="
+                                stroke-dasharray: 298.493, 298.493;
+                                stroke-dashoffset: 120;
+                              "
+                              fill="#20c997"
+                            ></path>
+                          </svg>
+                          <span class="skills-pro-per-item-num"> 60% </span>
+                        </div>
+                        <div class="skills-pro-per-item-title">
+                          Project Management
+                        </div>
+                      </li>
+                      <li class="skills-pro-per-item">
+                        <div class="skills-pro-per-item-contain">
+                          <svg viewBox="0 0 100 100" width="100" height="100">
+                            <path
+                              d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95"
+                              stroke="#6c757d"
+                              stroke-width="5"
+                              fill-opacity="0"
+                              fill="#20c997"
+                            ></path>
+                            <path
+                              d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95"
+                              stroke="#20c997"
+                              stroke-width="5"
+                              fill-opacity="0"
+                              style="
+                                stroke-dasharray: 298.493, 298.493;
+                                stroke-dashoffset: 105;
+                              "
+                              fill="#20c997"
+                            ></path>
+                          </svg>
+                          <span class="skills-pro-per-item-num"> 65% </span>
+                        </div>
+                        <div class="skills-pro-per-item-title">Creativity</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="experiences" id="experiences"></section>
+        <section class="contact" id="contact"></section>
       </div>
       <footer class="footer"></footer>
     </div>

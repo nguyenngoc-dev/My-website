@@ -1,0 +1,35 @@
+.service {
+  padding-top: 150px;
+  &-head {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &-heading {
+    @include text(3rem, $textColor, 700);
+  }
+  &-item {
+    background-color: $grayColor;
+    border-radius: 5px;
+    box-shadow: -1rem 0 3rem #000;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-height: 250px;
+    max-height: 300px;
+    &-icon {
+      color: #ed7256;
+      font-size: 1.8rem;
+    }
+    &-heading {
+      margin: 20px 0;
+      @include text(2.5rem, $textColor, 700);
+    }
+    &-pg {
+      @include text(1.4rem, $textColor, 500);
+    }
+  }
+}
+@media (max-width: 768px) {
+  .service {
+    padding-top: 80px;
+  }
+}

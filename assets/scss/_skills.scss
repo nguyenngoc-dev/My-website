@@ -1,0 +1,80 @@
+.skills {
+  padding-top: 140px;
+  &-tech {
+    &-heading {
+      @include text(3rem, $textColor, 700);
+      margin-bottom: 60px;
+      text-align: center;
+    }
+    &-per {
+      &-item {
+      }
+      &-des {
+        display: flex;
+        justify-content: space-between;
+        &-pg {
+          @include text(1.4rem, $textColor, 500);
+        }
+      }
+      &-range {
+        width: 100%;
+        height: 7px;
+        margin-top: 10px;
+        border-radius: 5px;
+        background-color: rgba(199, 198, 198, 0.6);
+        position: relative;
+        margin-bottom: 20px;
+        &-child {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 7px;
+          border-radius: 5px;
+          background-color: $primaryColor;
+        }
+      }
+    }
+  }
+  &-pro {
+    padding-left: 50px;
+    &-per {
+      &-list {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      &-item {
+        position: relative;
+        width: 48%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 20px;
+        &-contain {
+          position: relative;
+        }
+        &-num {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          @include text(1.4rem, $textColor, 500);
+        }
+        &-title {
+          @include text(1.5rem, $textColor, 500);
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
+    padding-top: 80px;
+  }
+  .skills-pro {
+    padding-left: 0;
+  }
+  .skills-tech-heading {
+    margin-top: 20px;
+  }
+}

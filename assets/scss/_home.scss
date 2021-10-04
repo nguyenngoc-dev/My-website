@@ -3,4 +3,119 @@
   &-inf {
     padding-top: 100px;
   }
+  &-btn {
+    background-color: $primaryColor;
+    font-size: 1.4rem;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+  }
+  &-heading-name {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 65px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  &-major {
+    font-size: 2.6rem;
+    line-height: 34px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+  &-contact-item {
+    margin: 10px 0;
+    font-size: 1.4rem;
+    &:hover .home-contact-icon {
+      color: $primaryColor;
+    }
+  }
+  &-contact-icon {
+    margin-right: 10px;
+  }
+  &-contact-link {
+    color: $textColor;
+    &:hover {
+      color: $textColor;
+    }
+  }
+  &-social-list {
+    display: flex;
+    margin-top: 25px;
+  }
+  &-social-item {
+    margin-right: 10px;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    transition: all linear 0.3s;
+    &:hover {
+      background-color: $textColor;
+    }
+    &:hover .home-social-link {
+      color: $primaryColor;
+    }
+  }
+
+  &-social-link {
+    color: $textColor;
+    padding: 6px 20px;
+    display: inline-block;
+    transition: all linear 0.3s;
+  }
+  &-avatar {
+    border-radius: 50%;
+    border: 20px solid rgba(0, 0, 0, 0.9);
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 400px;
+    &-img {
+      border: 20px solid rgba(0, 0, 0, 0.4);
+      border-radius: 50%;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 996px) {
+  .home {
+    padding-top: 80px;
+    &-heading-name {
+      font-size: 4rem;
+    }
+    &-major {
+      font-size: 2.5rem;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .home-row {
+    flex-direction: column-reverse;
+  }
+  .home-avatar {
+    margin-top: 20px;
+    width: 280px;
+    height: 280px;
+  }
+  .home-inf {
+    padding-top: 60px;
+    text-align: center;
+  }
+  .home-heading-name {
+    font-size: 3.5rem;
+  }
+  .home-major {
+    font-size: 2.2rem;
+    margin-top: 10px;
+  }
+  .home-social-list {
+    justify-content: center;
+  }
 }
