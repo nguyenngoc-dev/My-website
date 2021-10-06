@@ -1,0 +1,19 @@
+.footer {
+  background-color: $grayColor;
+  text-align: center;
+  margin-top: 80px;
+  padding: 20px;
+  &-content {
+    @include text(2rem, $primaryColor, 500);
+    &-item {
+      display: inline-block;
+      animation: stagger 0.8s infinite linear alternate;
+      animation-delay: calc((0.5 / 5) * var(--delay));
+    }
+  }
+}
+@keyframes stagger {
+  100% {
+    transform: translateY(20px);
+  }
+}
