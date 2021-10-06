@@ -17,3 +17,8 @@
     transform: translateY(20px);
   }
 }
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 40px;
+  }
+}
