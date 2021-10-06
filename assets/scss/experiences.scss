@@ -1,0 +1,144 @@
+.experiences {
+  padding-top: 180px;
+  &-heading {
+    @include text(3rem, $textColor, 700);
+    margin-bottom: 40px;
+  }
+  &-timeline {
+    padding: 20px;
+
+    &-item {
+      margin-left: 100px;
+      margin-bottom: 20px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: -27px;
+        height: 120%;
+        width: 3px;
+        background-color: $primaryColor;
+      }
+      &-heading {
+        @include text(2rem, $textColor, 500);
+        cursor: pointer;
+      }
+      &-content {
+        @include text(1.6rem, $textColor, 500);
+        &-link {
+          color: $primaryColor;
+          &:hover {
+            color: $darkPrimaryColor;
+          }
+        }
+      }
+      &-date {
+        @include text(1.6rem, $primaryColor, 500);
+        position: absolute;
+        top: 0;
+        left: -30%;
+      }
+      &-circle {
+        position: absolute;
+        top: 0;
+        left: -31px;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background-color: $primaryColor;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .experiences {
+    &-timeline {
+      &-item {
+        &::before {
+        }
+        &-date {
+          left: -40%;
+        }
+        &-circle {
+        }
+      }
+    }
+  }
+}
+@media (max-width: 996px) {
+  .experiences {
+    &-timeline {
+      &-item {
+        &::before {
+        }
+        &-date {
+          left: -62%;
+        }
+        &-circle {
+        }
+      }
+    }
+  }
+}
+@media (max-width: 760px) {
+  .experiences {
+    &-timeline {
+      &-item {
+        &::before {
+        }
+        &-date {
+          left: -33%;
+        }
+        &-circle {
+        }
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .experiences {
+    &-timeline {
+      &-item {
+        &::before {
+        }
+        &-date {
+          left: -55%;
+        }
+        &-circle {
+        }
+      }
+    }
+  }
+}
+@media (width: 320px) {
+  .experiences {
+    &-timeline {
+      &-item {
+        &::before {
+        }
+        &-date {
+          left: -80%;
+        }
+        &-circle {
+        }
+      }
+    }
+  }
+}
+@media (width: 414px) {
+  .experiences {
+    &-timeline {
+      &-item {
+        &::before {
+        }
+        &-date {
+          left: -60%;
+        }
+        &-circle {
+        }
+      }
+    }
+  }
+}
